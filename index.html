@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Step By Step SEO Plan for Smoky Barbershop</title>
+  <title>Smoky Barbershop – SEO Success Plan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <style>
@@ -30,7 +30,7 @@
     }
 
     .container {
-      max-width: 900px;
+      max-width: 960px;
       margin: 0 auto 40px auto;
       background: var(--light);
       border-radius: 16px;
@@ -50,7 +50,7 @@
     }
 
     header h1 {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       margin-bottom: 4px;
       color: var(--dark);
     }
@@ -152,6 +152,13 @@
       flex-shrink: 0;
     }
 
+    .task-list small {
+      display: block;
+      color: #777;
+      font-size: 0.78rem;
+      margin-top: 2px;
+    }
+
     .link-btn {
       display: inline-block;
       margin-top: 6px;
@@ -218,13 +225,20 @@
       margin-top: 10px;
     }
 
-    .gallery-grid img {
+    .gallery-item {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #555;
+    }
+
+    .gallery-item img {
       width: 100%;
       height: auto;
       display: block;
       border-radius: 10px;
       object-fit: cover;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+      margin-bottom: 4px;
     }
 
     .slogan {
@@ -256,48 +270,62 @@
 <body>
   <div class="container">
     <header>
-      <!-- Rename your chosen logo file to smoky-logo.jpg -->
       <img src="smoky-logo.jpg" alt="Smoky Barbershop SEO Plan Logo" />
-      <h1>Step By Step SEO Plan</h1>
-      <p>Easy setup for Smoky Barbershop – complete each step and move to the next.</p>
+      <h1>Smoky Barbershop SEO Success Plan</h1>
+      <p>Go from hidden to fully booked – follow each step, tick it off, then move on.</p>
     </header>
 
     <div class="step-nav" id="stepNav">
-      <button class="active" data-step="1">1. Setup & Tracking</button>
-      <button data-step="2">2. Website Basics</button>
-      <button data-step="3">3. Service Pages</button>
-      <button data-step="4">4. Google Maps & Reviews</button>
-      <button data-step="5">5. Content & Photos</button>
-      <button data-step="6">6. Ongoing Checkups</button>
+      <button class="active" data-step="1">1. Goals & Keywords</button>
+      <button data-step="2">2. Technical Setup</button>
+      <button data-step="3">3. Website Pages</button>
+      <button data-step="4">4. Local & Maps</button>
+      <button data-step="5">5. Content & Links</button>
+      <button data-step="6">6. Tracking & Growth</button>
     </div>
 
     <!-- STEP 1 -->
     <section class="step-card active" data-step="1">
       <div class="step-title">
         <div class="step-number">1</div>
-        <h2>Setup & Tracking</h2>
+        <h2>Goals & Keyword Plan</h2>
       </div>
-      <p class="step-desc">
-        Connect the site to the basic tools so you can see how many people
-        visit and which searches bring them.
+      <p class="step-desc" id="goalsSummary">
+        Decide what success looks like and which search words you want to own.
       </p>
+
+      <!-- fillable goals form -->
+      <form id="goalsForm" style="background:#fff;border-radius:10px;border:1px solid #e1e1e1;padding:10px;margin-bottom:10px;font-size:0.85rem;">
+        <p style="margin-bottom:6px;"><strong>Tick your main goals:</strong></p>
+        <label><input type="checkbox" name="goal" value="more bookings" /> More bookings</label><br />
+        <label><input type="checkbox" name="goal" value="more high‑value services (skin fades, beard work)" /> More high‑value services (skin fades, beard work)</label><br />
+        <label><input type="checkbox" name="goal" value="more repeat clients" /> More repeat clients</label><br />
+        <label><input type="checkbox" name="goal" value="stronger brand & reviews" /> Stronger brand & reviews</label><br /><br />
+        <label for="otherGoals">Other goals:</label><br />
+        <textarea id="otherGoals" rows="2" style="width:100%;margin-top:4px;"></textarea>
+        <button type="button" id="applyGoals" style="margin-top:6px;padding:6px 10px;border-radius:999px;border:none;background:#222;color:#fff;font-size:0.8rem;cursor:pointer;">
+          Apply my goals
+        </button>
+      </form>
+
       <ul class="task-list">
         <li>
           <span class="task-dot"></span>
-          <span>Create or log in to a Google account for the barbershop.</span>
+          <span>Write down your top goals. This will decide where you put most of your time (for example extra effort on reviews, or extra content for skin fades).</span>
         </li>
         <li>
           <span class="task-dot"></span>
-          <span>Set up Google Analytics for <strong>smokybarbershop.com</strong> and install the tracking code.</span>
+          <span>Use a simple keyword tool to see what people actually type into Google around “barber”, “barbershop”, “skin fade”, “kids cut”, “beard trim” and suburbs like Bowen Hills, Fortitude Valley, Newstead and Brisbane.</span>
+          <small>Google Keyword Planner is free inside Google Ads. Log in at <a href="https://ads.google.com" target="_blank">ads.google.com</a>, go to <em>Tools &amp; Settings → Keyword Planner</em> and choose “Discover new keywords”.[web:36][web:37][web:40]</small>
+          <small>You can also try Ubersuggest for extra ideas: <a href="https://app.neilpatel.com/en/ubersuggest/overview" target="_blank">Open Ubersuggest</a>.[web:41][web:47]</small>
         </li>
         <li>
           <span class="task-dot"></span>
-          <span>Set up Google Search Console and verify the website.</span>
+          <span>Build a simple keyword map so each page has a job.</span>
+          <small>Example: Home targets “barbershop Bowen Hills” and “barber near Fortitude Valley”. Skin fade page targets “skin fade Bowen Hills”. Kids page targets “kids haircut Bowen Hills”. Beard page targets “beard trim Brisbane”. Put those phrases in the page title, main heading and first paragraph of each page.[web:26]</small>
+          <small>You edit titles and descriptions in your website builder’s page SEO settings, and edit headings and text directly on the page. Google’s guide to good titles/snippets: <a href="https://developers.google.com/search/docs/appearance/snippet" target="_blank">see examples</a>.[web:29][web:32]</small>
         </li>
       </ul>
-      <a class="link-btn" href="https://analytics.google.com/" target="_blank">Open Google Analytics</a>
-      <br />
-      <a class="link-btn" href="https://search.google.com/search-console" target="_blank">Open Search Console</a>
 
       <div class="next-prev">
         <button class="np-btn" disabled>Previous</button>
@@ -309,23 +337,40 @@
     <section class="step-card" data-step="2">
       <div class="step-title">
         <div class="step-number">2</div>
-        <h2>Website Basics</h2>
+        <h2>Technical Setup & Speed</h2>
       </div>
       <p class="step-desc">
-        Make the homepage clear for Google and customers using simple text and titles.
+        Give Google a clean, fast site so it can crawl and trust your pages.
       </p>
       <ul class="task-list">
         <li>
           <span class="task-dot"></span>
-          <span>Set the page title to something like: “Smoky Barbershop | Skin Fades &amp; Men’s Haircuts in Bowen Hills”.</span>
+          <span>Make sure the site is secure (your address starts with https://). This is usually turned on in your hosting or website builder under “SSL” or “Security”.[web:27][web:33]</span>
         </li>
         <li>
           <span class="task-dot"></span>
-          <span>Add a short description on the homepage explaining who you are, what you do, and where you are located.</span>
+          <span>Use clean, short URLs for your pages, like <code>/skin-fade-bowen-hills</code> instead of long addresses with numbers.</span>
+          <small>In most website builders you can open the page settings and change the “URL” or “slug” field to a short, readable version. For structure tips, see Google’s docs on site structure and URLs: <a href="https://support.google.com/webmasters/answer/76329" target="_blank">view guide</a>.[web:33]</small>
         </li>
         <li>
           <span class="task-dot"></span>
-          <span>Make sure the site looks good on a phone (text big enough, buttons easy to tap).</span>
+          <span>Create or check your XML sitemap and submit it in Google Search Console.</span>
+          <small>If your platform doesn’t create one, use a free generator such as <a href="https://www.rnfinity.com/sitemap-generator" target="_blank">RNfinity XML Sitemap Generator</a> or <a href="https://www.powermapper.com/products/mapper/maps/sitemap-generator/" target="_blank">PowerMapper</a>, download the file as <code>sitemap.xml</code>, upload it to your site, then submit it in Search Console under <em>Indexing → Sitemaps</em>.[web:42][web:48]</small>
+        </li>
+        <li>
+          <span class="task-dot"></span>
+          <span>Check robots.txt so you are not blocking your important pages (home, services, gallery, blog).</span>
+          <small>In Search Console, use the robots.txt tester or open <code>https://yourdomain.com/robots.txt</code> in your browser to see what’s blocked.[web:27][web:33]</small>
+        </li>
+        <li>
+          <span class="task-dot"></span>
+          <span>Fix broken links and set up redirects so old URLs send people to the right page.</span>
+          <small>Tools like the free <a href="https://www.seobility.net/en/redirectcheck/" target="_blank">Seobility Redirect Checker</a> help you see if redirects work correctly.[web:45]</small>
+        </li>
+        <li>
+          <span class="task-dot"></span>
+          <span>Improve speed and Core Web Vitals so the site loads fast on mobile.</span>
+          <small>Test each important page in Google PageSpeed Insights: <a href="https://pagespeed.web.dev/" target="_blank">open PSI</a>. It shows Core Web Vitals and suggestions such as compressing images and removing heavy scripts.[web:44][web:49]</small>
         </li>
       </ul>
 
@@ -339,23 +384,31 @@
     <section class="step-card" data-step="3">
       <div class="step-title">
         <div class="step-number">3</div>
-        <h2>Service Pages</h2>
+        <h2>High‑Performing Website Pages</h2>
       </div>
       <p class="step-desc">
-        Each main service should have its own short page that Google can find.
+        Turn each page into a clear “sales person” that Google and clients understand.
       </p>
       <ul class="task-list">
         <li>
           <span class="task-dot"></span>
-          <span>Create or edit pages for: Classic Cut, Skin Fade, Beard Trim, Long Hair, etc.</span>
+          <span>For each important page, set a strong title like “Smoky Barbershop | Skin Fades in Bowen Hills, Brisbane”.[web:26]</span>
         </li>
         <li>
           <span class="task-dot"></span>
-          <span>Add 1–2 short paragraphs that describe the service and mention Bowen Hills / Brisbane.</span>
+          <span>Use one main heading (H1) per page with your key phrase, for example “Skin Fade Barber in Bowen Hills”.[web:26][web:32]</span>
         </li>
         <li>
           <span class="task-dot"></span>
-          <span>Add a clear “Book now” button that links to your booking page.</span>
+          <span>Add 2–4 short sections with headings explaining: who it’s for, what’s included, how long it takes, how to book.[web:29]</span>
+        </li>
+        <li>
+          <span class="task-dot"></span>
+          <span>Add clear “Book now” buttons and link to your booking page from every service and blog post.[web:25]</span>
+        </li>
+        <li>
+          <span class="task-dot"></span>
+          <span>Rename service photos to match the service, for example skin-fade-bowen-hills.jpg, and add helpful alt text.[web:29]</span>
         </li>
       </ul>
       <a class="link-btn" href="https://www.smokybarbershop.com/book-online" target="_blank">Open Booking Page</a>
@@ -370,23 +423,31 @@
     <section class="step-card" data-step="4">
       <div class="step-title">
         <div class="step-number">4</div>
-        <h2>Google Maps & Reviews</h2>
+        <h2>Local, Maps & Reviews</h2>
       </div>
       <p class="step-desc">
-        Optimise your Google Business Profile so you show up for “barber near me”.
+        Own your local area on Google Maps so nearby people find you first.
       </p>
       <ul class="task-list">
         <li>
           <span class="task-dot"></span>
-          <span>Claim or log in to your Google Business Profile for Smoky Barbershop.</span>
+          <span>Claim and complete your Google Business Profile with correct name, address, phone, website, and opening hours.[web:24][web:27]</span>
         </li>
         <li>
           <span class="task-dot"></span>
-          <span>Check that the name, address, phone number and opening hours match your website.</span>
+          <span>Add your main services (skin fades, classic cuts, beard trims, kids cuts) inside Google Business Profile.[web:24][web:25]</span>
         </li>
         <li>
           <span class="task-dot"></span>
-          <span>Ask happy clients to leave a review and reply to every review with a quick thank you.</span>
+          <span>Upload fresh shop and haircut photos every month so your listing looks alive.[web:24][web:28]</span>
+        </li>
+        <li>
+          <span class="task-dot"></span>
+          <span>Ask happy clients to leave a Google review and reply to every review with a quick thank you and your suburb name.[web:25][web:34]</span>
+        </li>
+        <li>
+          <span class="task-dot"></span>
+          <span>Check your details are the same on other places like Apple Maps, Facebook, MapQuest and Yellow Pages.[web:24][web:30]</span>
         </li>
       </ul>
       <a class="link-btn" href="https://www.google.com/business/" target="_blank">Open Google Business Profile</a>
@@ -401,23 +462,27 @@
     <section class="step-card" data-step="5">
       <div class="step-title">
         <div class="step-number">5</div>
-        <h2>Content & Photos</h2>
+        <h2>Content & Authority</h2>
       </div>
       <p class="step-desc">
-        Use photos and short posts to show your work and keep the site active.
+        Show your skill and build trust with useful posts and good links.
       </p>
       <ul class="task-list">
         <li>
           <span class="task-dot"></span>
-          <span>Add recent haircut photos to a gallery page and to Google Business Profile.</span>
+          <span>Once a month, write a short article answering a real client question (for example “How often should I get a skin fade?”).[web:21][web:29]</span>
         </li>
         <li>
           <span class="task-dot"></span>
-          <span>Once a month, write a short “tips” post (for example: how often to get a fade).</span>
+          <span>In each article, mention that you are a barber in Bowen Hills near Fortitude Valley and link to the booking page.[web:21][web:25]</span>
         </li>
         <li>
           <span class="task-dot"></span>
-          <span>Share the post on Instagram and add a link to your website in your bio.</span>
+          <span>Ask local gyms, cafés or community pages if they can list Smoky Barbershop on their website with a link.[web:25][web:28]</span>
+        </li>
+        <li>
+          <span class="task-dot"></span>
+          <span>Share each new post and a photo of the cut on Instagram and Facebook with a link back to your website.[web:25]</span>
         </li>
       </ul>
 
@@ -431,23 +496,27 @@
     <section class="step-card" data-step="6">
       <div class="step-title">
         <div class="step-number">6</div>
-        <h2>Ongoing Checkups</h2>
+        <h2>Tracking & Continuous Growth</h2>
       </div>
       <p class="step-desc">
-        Every few months, check the numbers and make small improvements.
+        Use the numbers to see what works, then do more of it.
       </p>
       <ul class="task-list">
         <li>
           <span class="task-dot"></span>
-          <span>Look in Google Analytics to see which pages people visit most.</span>
+          <span>In Google Analytics, check which pages bring the most visitors and which ones lead to bookings.[web:27]</span>
         </li>
         <li>
           <span class="task-dot"></span>
-          <span>Check Google Search Console for which search words show your site.</span>
+          <span>In Search Console, look at “Performance → Search results” and see which search words show your site but don’t get many clicks.[web:26][web:27]</span>
         </li>
         <li>
           <span class="task-dot"></span>
-          <span>Update your most important pages once or twice a year with fresh text and photos.</span>
+          <span>Improve those pages with better titles, clearer descriptions and stronger photos, then check again in a month.[web:26][web:29]</span>
+        </li>
+        <li>
+          <span class="task-dot"></span>
+          <span>Every 3–6 months, repeat this loop: fix weak pages, add one new useful article, collect more reviews.[web:26][web:30]</span>
         </li>
       </ul>
 
@@ -465,11 +534,22 @@
       </div>
 
       <div class="gallery-grid">
-        <!-- Rename your files to these names -->
-        <img src="cut-1.jpg" alt="Smoky Barbershop haircut 1" />
-        <img src="cut-2.jpg" alt="Smoky Barbershop haircut 2" />
-        <img src="cut-3.jpg" alt="Smoky Barbershop haircut 3" />
-        <img src="cut-4.jpg" alt="Smoky Barbershop haircut 4" />
+        <div class="gallery-item">
+          <img src="cut-1.jpg" alt="Smoky Barbershop kids cut" />
+          <div>Kids cut</div>
+        </div>
+        <div class="gallery-item">
+          <img src="cut-2.jpg" alt="Smoky Barbershop skin fade" />
+          <div>Skin fade</div>
+        </div>
+        <div class="gallery-item">
+          <img src="cut-3.jpg" alt="Smoky Barbershop barber's choice cut" />
+          <div>Barber's choice</div>
+        </div>
+        <div class="gallery-item">
+          <img src="cut-4.jpg" alt="Smoky Barbershop classic cut" />
+          <div>Classic cut</div>
+        </div>
       </div>
 
       <div class="slogan">
@@ -478,7 +558,7 @@
     </section>
 
     <footer>
-      Step by Step SEO plan for Smoky Barbershop – keep going one step at a time.
+      Step by Step SEO plan for Smoky Barbershop – keep taking small actions and your rankings will follow.
     </footer>
   </div>
 
@@ -507,6 +587,33 @@
     npButtons.forEach((btn) => {
       btn.addEventListener("click", () => showStep(btn.dataset.next));
     });
+
+    // Goals form logic
+    const goalsForm = document.getElementById("goalsForm");
+    const applyGoals = document.getElementById("applyGoals");
+    const goalsSummary = document.getElementById("goalsSummary");
+
+    if (goalsForm && applyGoals && goalsSummary) {
+      applyGoals.addEventListener("click", () => {
+        const checked = Array.from(
+          goalsForm.querySelectorAll("input[name='goal']:checked")
+        ).map((el) => el.value);
+
+        const other = document.getElementById("otherGoals").value.trim();
+        if (other) checked.push(other);
+
+        if (checked.length === 0) {
+          goalsSummary.textContent =
+            "Decide what success looks like and which search words you want to own.";
+          return;
+        }
+
+        goalsSummary.textContent =
+          "Your focus: " +
+          checked.join(", ") +
+          ". Pay extra attention to the steps that support this (for example strong pages in Step 3, local reviews in Step 4, and fresh content in Step 5).";
+      });
+    }
   </script>
 </body>
 </html>
